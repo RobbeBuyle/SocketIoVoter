@@ -1,0 +1,12 @@
+{
+  "name": "sockio_test",
+  "version": "1",
+  "description": "test",
+  "main": "index.js",
+  "author": "RobbeBuyle <robbe.buyle@telenet.be>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  }
+}
