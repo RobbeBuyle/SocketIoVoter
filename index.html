@@ -13,30 +13,21 @@
         <h2>Users: <span class="users_amount"></span></h2>
       </section>
       <section>
+        <ul class="votes"></ul>
+
         <form class="voteForm">
-          <div>
-            <input type="radio" id="1" name="drone" value="1" checked />
-            <label for="1">1</label>
-          </div>
+          <select name="options" class="options">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
 
-          <div>
-            <input type="radio" id="2" name="drone" value="2" />
-            <label for="2">2</label>
-          </div>
-
-          <div>
-            <input type="radio" id="3" name="drone" value="3" />
-            <label for="3">3</label>
-          </div>
-
-          <input type="submit" value="Send Vote" />
+          <input type="submit" value="send vote" />
         </form>
       </section>
     </main>
 
     <script src="/socket.io/socket.io.js"></script>
-    <script>
-      let socket = io();
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
